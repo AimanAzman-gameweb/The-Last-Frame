@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Last Frame — A Psychological Horror Game</title>
+  <meta name="description" content="The Last Frame is a first-person psychological horror game set in an abandoned animation studio where black ink spreads, drawings change and a pixel-winged creature hunts in the static.">
+  <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+
+  <!-- Bebas Neue (title) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (same on all pages) ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="images/favicon.png" alt="The Last Frame logo"><span>THE LAST FRAME<small>A Studio · Est. 2026</small></span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-fx" aria-hidden="true"><span class="beam"></span><span class="beam beam--b"></span><span class="dust"></span><span class="scan"></span></div>
+      <div class="hero-inner">
+        <p class="presents">A <b>Lantern Reel</b> Production</p>
+        <img class="hero-logo flicker" src="images/logo.png" alt="The Last Frame">
+        <p class="hero-tag">Every frame was drawn by hand. <em data-text="Something is still drawing.">Something is still drawing.</em></p>
+        <div class="btn-row">
+          <a class="btn" href="contact.html#download">Pre-Order Now</a>
+          <a class="btn btn--ghost" href="gallery.html">Watch Trailer</a>
+        </div>
+        <p class="hero-meta">First-Person Psychological Horror · PC · 2027</p>
+      </div>
+      <a class="scroll-cue" href="#synopsis" aria-label="Scroll to synopsis">Scroll</a>
+    </section>
+
+    <!-- ===== FILM TAPES (decorative) ===== -->
+    <div class="tapes" aria-hidden="true">
+      <div class="tape tape--a"><div class="tape-track"><span>Now Haunting</span><span>First-Person Psychological Horror</span><span>PC · 2027</span><span>Every Frame Hand-Drawn</span></div><div class="tape-track"><span>Now Haunting</span><span>First-Person Psychological Horror</span><span>PC · 2027</span><span>Every Frame Hand-Drawn</span></div></div>
+      <div class="tape tape--b"><div class="tape-track"><span>Player Discretion Advised</span><span>Do Not Look Away</span><span>The Projector Is Running</span><span>The Ink Is Spreading</span></div><div class="tape-track"><span>Player Discretion Advised</span><span>Do Not Look Away</span><span>The Projector Is Running</span><span>The Ink Is Spreading</span></div></div>
+    </div>
+
+    <!-- ===== SYNOPSIS ===== -->
+    <section class="section" id="synopsis">
+      <div class="container split">
+        <div>
+          <h3>Game Synopsis</h3>
+          <h2>The ink is spreading.<br>The projector is running.</h2>
+          <p>Drawn into an abandoned animation studio, a young Digital Media student discovers the dark secrets hidden behind its forgotten productions. What begins as an ordinary exploration soon turns into a nightmare when an old projector activates on its own, cartoon illustrations begin to change, and mysterious black ink spreads throughout the building.</p>
+          <p>As the studio grows increasingly distorted, a terrifying creature emerges from the darkness, its body formed from living ink and its wings fractured by digital pixels. Trapped inside a place where animation and reality begin to merge, the protagonist must uncover the truth behind the studio before becoming part of its unfinished creation.</p>
+          <div class="btn-row">
+            <a class="btn btn--sm" href="characters.html">Meet the Cast</a>
+            <a class="btn btn--sm btn--ghost" href="gallery.html">See Gameplay</a>
+          </div>
+        </div>
+        <figure class="frame-img" style="margin:0">
+          <img src="images/shot-1.jpg" alt="A student walks down a corridor dripping with black ink toward a red glowing door" width="1280" height="720">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== CORE FEATURES ===== -->
+    <section class="section section--alt" aria-labelledby="feat-title">
+      <div class="container">
+        <div class="section-head">
+          <h3>What Waits Inside</h3>
+          <h2 id="feat-title">Animation and reality are merging</h2>
+          <hr class="rule">
+        </div>
+        <div class="grid grid--3">
+          <article class="card feature">
+            <span class="num">01</span>
+            <h3>Living Illustrations</h3>
+            <p>Cartoon drawings on the walls shift when you look away. Study every frame, because the studio is rewriting itself.</p>
+          </article>
+          <article class="card feature">
+            <span class="num">02</span>
+            <h3>Ink That Spreads</h3>
+            <p>Black ink creeps through corridors and floods rooms. Erase it, outrun it, or lose the way back.</p>
+          </article>
+          <article class="card feature">
+            <span class="num">03</span>
+            <h3>Something had been awaken</h3>
+            <p>A creature of living ink, its wings broken into drifting pixels, hunts by the static the projector leaves behind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STUDIO MEMO (IMAGE VERSION) ===== -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head">
+          <h3>Archive · Recovered Document</h3>
+          <h2>Notice to you</h2>
+          <hr class="rule">
+        </div>
+
+        <figure class="memo-image">
+          <img 
+            src="images/studio-memo.jpg" 
+            alt="Internal memo from Lantern Reel Animation Studios dated October 14th, 1931 regarding Projector Room B and Reel No. 9"
+            width="2100"
+            height="900"
+          >
+          <figcaption>
+            Letter for Aiman from Eliza - January 25th, 2025
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta-band">
+      <div class="container">
+        <span class="eyebrow">Wishlist Open</span>
+        <h2>The reel is still turning.</h2>
+        <p style="color:var(--muted);max-width:560px;margin:0 auto 32px">Be among the first to step inside the studio. Pre-order and get the exclusive <em>Inkwell Edition</em> digital artbook.</p>
+        <div class="btn-row">
+          <a class="btn" href="contact.html#download">Pre-Order Now</a>
+          <a class="btn btn--ghost" href="contact.html#feedback">Send Feedback</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>The Last Frame</h4>
+        <p><strong>A Studio</strong> · Stage Four, Hollow Street. Est. 1929, closed 1931. A first-person psychological horror game about a forgotten studio, a projector that runs by itself and an ink that never stops spreading.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Download &amp; Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rating</h4>
+        <p>Contains intense horror themes, flashing lights and jump scares. Player discretion advised.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 1929–2026 Lantern Reel Animation (fictional studio) · The Last Frame · Student Project · DAM50403</div>
+  </footer>
+  <script src="js/music.js" defer></script>
+</body>
+</html>

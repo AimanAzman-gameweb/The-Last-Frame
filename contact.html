@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download &amp; Contact — The Last Frame</title>
+  <meta name="description" content="System requirements, developer profile, social links and a feedback form for The Last Frame.">
+  <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+ <!-- Bebas Neue (title) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (same on all pages) ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="The Last Frame logo"><span>THE LAST FRAME<small>A Studio · Est. 2026</small></span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow"><strong>Box Office · Download &amp; Contact</strong></span>
+        <h1>Enter the Studio</h1>
+        <p>Check your system, grab the demo and tell us what you saw.</p>
+      </div>
+    </section>
+
+    <!-- ===== DOWNLOAD ===== -->
+    <section class="section" id="download" aria-labelledby="dl-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="dl-title">Get The Last Frame</h2>
+          <hr class="rule">
+          <p>Playable demo coming soon. Pre-order to unlock the Inkwell Edition.</p>
+        </div>
+
+        <div class="platforms">
+          <article class="card platform"><h3>Steam</h3><p>Windows 10 / 11</p><a class="btn btn--sm" href="#download">Pre-Order</a></article>
+          <article class="card platform"><h3>itch.io</h3><p>Free Demo (Reel 1)</p><a class="btn btn--sm btn--ghost" href="#download">Download Demo</a></article>
+          <article class="card platform"><h3>Press Kit</h3><p>Logos, screenshots, fact sheet</p><a class="btn btn--sm btn--ghost" href="gallery.html">View Media</a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SYSTEM REQUIREMENTS ===== -->
+    <section class="section section--alt" aria-labelledby="spec-title">
+      <div class="container" style="max-width:900px">
+        <div class="section-head">
+          <span class="eyebrow">System Requirements</span>
+          <h2 id="spec-title">Will It Run?</h2>
+          <hr class="rule">
+        </div>
+        <div style="overflow-x:auto">
+          <table class="spec-table">
+            <thead><tr><th></th><th>Minimum</th><th>Recommended</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">OS</th><td>Windows 10 (64-bit)</td><td>Windows 11 (64-bit)</td></tr>
+              <tr><th scope="row">Processor</th><td>Intel Core i5-6600 / Ryzen 5 1600</td><td>Intel Core i7-9700 / Ryzen 5 3600</td></tr>
+              <tr><th scope="row">Memory</th><td>8 GB RAM</td><td>16 GB RAM</td></tr>
+              <tr><th scope="row">Graphics</th><td>GTX 960 / RX 570 (4 GB)</td><td>RTX 2060 / RX 5700 (6 GB)</td></tr>
+              <tr><th scope="row">Storage</th><td>12 GB available space</td><td>12 GB SSD</td></tr>
+              <tr><th scope="row">Extras</th><td colspan="2">Headphones strongly recommended. The static sounds better in the dark.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEVELOPER + SOCIAL ===== -->
+    <section class="section" aria-labelledby="dev-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow"><strong>Developer</strong></span>
+          <h2 id="dev-title">Behind the Drawing Board</h2>
+          <div class="dev-card card" style="padding:24px;margin-bottom:24px">
+            <div class="dev-avatar" aria-hidden="true">A</div>
+            <div>
+              <h3 style="margin-bottom:4px"><!-- TUKAR NAMA --> Aiman Azman</h3>
+              <p style="margin:0;color:var(--muted);font-size:.9rem">Solo Developer &amp; Designer · DAM50403 Website Design<br><!-- TUKAR INSTITUSI --> TVET MARA Rembau</p>
+            </div>
+          </div>
+          <p>The Last Frame began as a student project about a cartoon that would not stop moving. This site is the final project for Website Design, built by hand with HTML5 and CSS.</p>
+
+          <h2>Follow the Project</h2>
+          <ul class="socials">
+            <!-- TUKAR # dengan pautan sebenar -->
+            <li><a href="#" rel="noopener">Instagram</a></li>
+            <li><a href="#" rel="noopener">YouTube</a></li>
+            <li><a href="#" rel="noopener">TikTok</a></li>
+            <li><a href="#" rel="noopener">Discord</a></li>
+          </ul>
+        </div>
+
+        <!-- ===== FEEDBACK FORM ===== -->
+        <div class="card" id="feedback" style="padding:clamp(22px,4vw,38px)">
+          <h3>Send Feedback</h3>
+          <p style="color:var(--muted);font-size:.9rem">Found a bug? A scare that didn't land? Tell us.</p>
+          <!-- data-netlify: borang ini akan berfungsi automatik bila di-deploy di Netlify -->
+          <form name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="feedback">
+            <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="form-row">
+              <div><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Aina Kamal" required></div>
+              <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com" required></div>
+            </div>
+            <div>
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option>General feedback</option>
+                <option>Bug report</option>
+                <option>Press / collaboration</option>
+                <option>Pre-order question</option>
+              </select>
+            </div>
+            <div><label for="message">Message</label><textarea id="message" name="message" placeholder="What did the drawings do when you looked away?" required></textarea></div>
+            <button class="btn" type="submit">Send Message</button>
+            <p class="form-note">We read every message. Usually before the ink dries.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on all pages) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>The Last Frame</h4>
+        <p><strong>Lantern Reel Animation Studios</strong> · Stage Four, Hollow Street. Est. 1929, closed 1931. A first-person psychological horror game about a forgotten studio, a projector that runs by itself and an ink that never stops spreading.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Download &amp; Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rating</h4>
+        <p>Contains intense horror themes, flashing lights and jump scares. Player discretion advised.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 1929–2026 Lantern Reel Animation (fictional studio) · The Last Frame · Student Project · DAM50403</div>
+  </footer>
+  <script src="js/music.js" defer></script>
+</body>
+</html>

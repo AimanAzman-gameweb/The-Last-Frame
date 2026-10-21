@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Characters &amp; Features — The Last Frame</title>
+  <meta name="description" content="Meet Aiman, the Demon, Eliza and Dante, plus the stylus, projector and reel mechanics of The Last Frame.">
+  <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="The Last Frame logo"><span>THE LAST FRAME<small>A Studio · Est. 2026</small></span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html" aria-current="page">Characters</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Characters &amp; Features</span>
+        <h1>Inhabitants of the Reel</h1>
+        <p>Four names. Only one of them is still real.</p>
+      </div>
+    </section>
+
+    <!-- ===== CHARACTER CARDS ===== -->
+    <section class="section" aria-labelledby="cast-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="cast-title">The Characters</h2>
+          <hr class="rule">
+        </div>
+
+        <div class="grid grid--4">
+
+          <!-- AIMAN -->
+          <article class="card" onclick="openCharModal('aiman')">
+            <img src="images/char-mc.png" alt="Aiman" width="512" height="1024">
+            <div class="card-body">
+              <h3>Protagonist</h3>
+              <h2>Aiman</h2>
+              <p>20, final-year Digital Media student. Came to document the abandoned studio for his thesis.</p>
+              <div class="stat"><div class="stat-row"><span>Curiosity</span><span>85</span></div><div class="bar"><i style="width:85%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Stealth</span><span>55</span></div><div class="bar"><i style="width:55%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Sanity</span><span>45</span></div><div class="bar"><i style="width:45%"></i></div></div>
+            </div>
+          </article>
+
+          <!-- THE DEMON -->
+          <article class="card" onclick="openCharModal('demon')">
+            <img src="images/char-demon.png" alt="The Demon" width="600" height="800">
+            <div class="card-body">
+              <h3>Antagonist</h3>
+              <h2>The Demon</h2>
+              <p>A creature of living ink, its wings fractured by digital pixels.</p>
+              <div class="stat"><div class="stat-row"><span>Danger</span><span>100</span></div><div class="bar"><i style="width:100%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Speed</span><span>70</span></div><div class="bar"><i style="width:70%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Glitch</span><span>90</span></div><div class="bar"><i style="width:90%"></i></div></div>
+            </div>
+          </article>
+
+          <!-- ELIZA -->
+          <article class="card" onclick="openCharModal('eliza')">
+            <img src="images/char-eliza.png" alt="Eliza" width="600" height="800">
+            <div class="card-body">
+              <h3>The Old Pal</h3>
+              <h2>Eliza</h2>
+              <p>An old friend from the past who left a mysterious message.</p>
+              <div class="stat"><div class="stat-row"><span>Knowledge</span><span>95</span></div><div class="bar"><i style="width:95%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Trust</span><span>90</span></div><div class="bar"><i style="width:90%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Presence</span><span>60</span></div><div class="bar"><i style="width:60%"></i></div></div>
+            </div>
+          </article>
+
+          <!-- DANTE -->
+          <article class="card" onclick="openCharModal('dante')">
+            <img src="images/char-dante.png" alt="Dante" width="600" height="800">
+            <div class="card-body">
+              <h3>The Unknown</h3>
+              <h2>Dante</h2>
+              <p>An enigmatic figure tied to the studio's darkest secrets.</p>
+              <div class="stat"><div class="stat-row"><span>Power</span><span>100</span></div><div class="bar"><i style="width:100%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Mercy</span><span>10</span></div><div class="bar"><i style="width:10%"></i></div></div>
+              <div class="stat"><div class="stat-row"><span>Memory</span><span>100</span></div><div class="bar"><i style="width:100%"></i></div></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GAME MECHANICS ===== -->
+    <section class="section section--alt" aria-labelledby="mech-title">
+      <div class="container">
+        <div class="section-head">
+          <h3>Game Mechanics</h3>
+          <h2 id="mech-title">How to Survive an Unfinished Cartoon</h2>
+          <hr class="rule">
+          <p>No weapons. Just a stylus, a flickering projector and the nerve to rewind.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card"><div class="card-body">
+            <span class="pill">Core</span><h3>Erase the Ink</h3>
+            <p>Use your stylus to wipe away black ink and reveal hidden doors, notes and shortcuts. But erased ink doesn't vanish. It goes somewhere.</p>
+          </div></article>
+
+          <article class="card"><div class="card-body">
+            <span class="pill">Defence</span><h3>Projector Light</h3>
+            <p>Crank a projector to carve out a pocket of safety. Ink recoils from the beam, but the whirring and the glare can be heard from the next room.</p>
+          </div></article>
+
+          <article class="card"><div class="card-body">
+            <span class="pill">Puzzle</span><h3>Rewind the Reel</h3>
+            <p>Scrub old film reels frame by frame to see what happened in each room, then change the drawings that no longer match the past.</p>
+          </div></article>
+
+          <article class="card"><div class="card-body">
+            <span class="pill">Survival</span><h3>Listen for the Static</h3>
+            <p>The Demon's pixel wings desync when it moves, crackling like a bad signal. Learn the static and you will know when to hide.</p>
+          </div></article>
+        </div>
+
+        <div class="btn-row" style="justify-content:center;margin-top:56px">
+          <a class="btn" href="gallery.html">See It in Action</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== CHARACTER MODAL ===== -->
+  <div class="char-modal" id="charModal">
+    <div class="char-modal-content">
+      <button class="char-modal-close" onclick="closeCharModal()">&times;</button>
+      
+      <div class="char-modal-img">
+        <img id="modalImg" src="" alt="">
+      </div>
+      
+      <div class="char-modal-body">
+        <span class="pill" id="modalRole"></span>
+        <h2 id="modalName"></h2>
+        <p id="modalDesc"></p>
+        
+        <div class="char-modal-stats" id="modalStats"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>The Last Frame</h4>
+        <p><strong>A Studio</strong> · Stage Four, Hollow Street. Est. 1929, closed 1931. A first-person psychological horror game about a forgotten studio, a projector that runs by itself and an ink that never stops spreading.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Download &amp; Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rating</h4>
+        <p>Contains intense horror themes, flashing lights and jump scares. Player discretion advised.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 1929–2026 Lantern Reel Animation (fictional studio) · The Last Frame · Student Project · DAM50403</div>
+  </footer>
+
+  <script>
+    // ===== Character Data =====
+    const characters = {
+      aiman: {
+        name: "Aiman",
+        role: "Protagonist",
+        img: "images/char-mc.png",
+        desc: "Aiman is a 20-year-old final-year Digital Media student with a passion for animation, visual storytelling, and forgotten works of art. Determined to document the abandoned Lantern Reel Animation Studios for his thesis, he enters the building expecting to discover traces of its forgotten history and the creative minds who once worked there. Armed with his curiosity and determination, Aiman initially treats the studio as an opportunity to explore an abandoned piece of animation history. However, his academic curiosity soon turns into a terrifying struggle for survival. The drawings on the walls begin to move on their own, old projectors activate without warning, and mysterious black ink slowly spreads throughout the building. As the studio becomes increasingly distorted, Aiman begins to question what is real and what exists only within his deteriorating perception. Every discovery brings him closer to the truth, but also deeper into a nightmare that seems to recognize his presence. Trapped inside the studio, Aiman must uncover the secrets hidden within its unfinished animations before his own story becomes another forgotten reel.",
+        stats: [
+          { label: "Curiosity", value: 85 },
+          { label: "Stealth", value: 55 },
+          { label: "Sanity", value: 80 }
+        ]
+      },
+      demon: {
+        name: "The Demon",
+        role: "Antagonist",
+        img: "images/char-demon.png",
+        desc: "The Demon is a terrifying entity formed from living black ink and fractured digital pixels, an unnatural fusion of traditional animation and corrupted digital imagery. Its body shifts and deforms unpredictably, allowing it to emerge from dark corners, distorted drawings, and pools of spreading ink. Fragments of its appearance seem to break apart like corrupted visual data, creating an unsettling contrast between its physical form and the digital distortions surrounding it. Unlike ordinary predators, the Demon does not rely on conventional sight to track its victims. Instead, it senses the lingering static produced by the studio's projectors, following these strange signals through the abandoned corridors and forgotten animation rooms. Its presence is often announced by subtle distortions, flickering lights, or the unnatural movement of ink across nearby surfaces. Silent and relentless, it pursues anything that disturbs the studio's unnatural stillness. Conventional weapons appear ineffective against it, making direct confrontation a desperate gamble rather than a reliable means of survival. As the ink continues to spread, the boundary between the studio's animated creations and the physical world begins to collapse, raising a terrifying question: is the Demon merely hunting within the studio, or is the entire building becoming an extension of its existence?",
+        stats: [
+          { label: "Danger", value: 100 },
+          { label: "Speed", value: 70 },
+          { label: "Glitch", value: 90 }
+        ]
+      },
+      eliza: {
+        name: "Eliza",
+        role: "The Old Pal",
+        img: "images/char-eliza.png",
+        desc: "Eliza is an old friend from Aiman's past whose unexpected return becomes the starting point of his journey into Lantern Reel Animation Studios. Through a mysterious handwritten note, she invites him back to the abandoned building, offering little explanation for why he should visit a place that appears to have been forgotten by the rest of the world. The note contains just enough information to awaken Aiman's curiosity, leaving him with more questions than answers. Despite her connection to Aiman, Eliza remains an unpredictable and difficult figure to understand. Her past relationship with him suggests that she may know more about his personal history than she is willing to reveal. The unusual invitation also raises questions about her connection to the studio and its disturbing secrets. Is she aware of the dangers waiting inside, or does she have reasons of her own for sending Aiman there? Her true intentions remain hidden behind an uncertain trail of clues, making it difficult to determine whether she is a potential ally, an unwilling participant, or someone with a much deeper connection to the nightmare unfolding within Lantern Reel. Until her motives are revealed, every trace of Eliza becomes another piece of a mystery that Aiman may not be prepared to solve.",
+        stats: [
+          { label: "Knowledge", value: 95 },
+          { label: "Trust", value: 90 },
+          { label: "Presence", value: 60 }
+        ]
+      },
+      dante: {
+        name: "Dante",
+        role: "The Unknown",
+        img: "images/char-dante.png",
+        desc: "Dante is an enigmatic figure whose name is closely associated with the history of Lantern Reel Animation Studios. Information about his identity, his work, and his eventual disappearance remains scarce, buried beneath the studio's abandoned equipment, unfinished drawings, and fragmented records. Some accounts suggest that he was one of the original animators responsible for the studio's early productions, while others claim that his involvement extended far beyond the work of an ordinary artist. As Aiman explores the building, Dante's presence becomes an increasingly unsettling part of its forgotten history. Scattered clues hint at a past that was never properly documented, leaving behind unanswered questions about the people who worked at Lantern Reel and the events that led to its downfall. Yet the most disturbing detail is the uncertainty surrounding Dante himself. No one can confidently explain what happened to him, and rumours persist that he never truly left the studio. Whether he is simply a missing animator whose legacy has been distorted by time or someone connected to the studio's darkest secrets remains unknown. In a place where drawings can move and ink can take on a life of its own, Dante's story may hold the key to understanding what Lantern Reel has become.",
+        stats: [
+          { label: "Power", value: 100 },
+          { label: "Mercy", value: 10 },
+          { label: "Memory", value: 100 }
+        ]
+      }
+    };
+
+    // ===== Open Modal =====
+    function openCharModal(id) {
+      const char = characters[id];
+      if (!char) return;
+
+      document.getElementById('modalImg').src = char.img;
+      document.getElementById('modalImg').alt = char.name;
+      document.getElementById('modalRole').textContent = char.role;
+      document.getElementById('modalName').textContent = char.name;
+      document.getElementById('modalDesc').textContent = char.desc;
+
+      // Stats
+      const statsContainer = document.getElementById('modalStats');
+      statsContainer.innerHTML = char.stats.map(stat => `
+        <div class="stat">
+          <div class="stat-row">
+            <span>${stat.label}</span>
+            <span>${stat.value}</span>
+          </div>
+          <div class="bar"><i style="width:${stat.value}%"></i></div>
+        </div>
+      `).join('');
+
+      document.getElementById('charModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // ===== Close Modal =====
+    function closeCharModal() {
+      document.getElementById('charModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close when click outside
+    document.getElementById('charModal').addEventListener('click', function(e) {
+      if (e.target === this) closeCharModal();
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeCharModal();
+    });
+  </script>
+  <script src="js/music.js" defer></script>
+</body>
+</html>
