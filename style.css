@@ -932,19 +932,7 @@ textarea:focus-visible {
   display: block;
 }
 /* "RECOVERED" stamp slams onto the paper */
-.memo-image::after {
-  content: "RECOVERED";
-  position: absolute; top: 9%; right: -3%;
-  font-family: var(--font-head); font-size: clamp(1.6rem, 5vw, 3rem); letter-spacing: .12em; line-height: 1;
-  color: var(--orange);
-  border: 4px double var(--orange);
-  padding: 8px 18px 4px;
-  rotate: -14deg;
-  background: rgba(10, 10, 10, .35);
-  box-shadow: 0 0 22px rgba(255, 122, 26, .35);
-  pointer-events: none;
-}
-.memo-image figcaption {
+-image figcaption {
   margin-top: 18px;
   font-size: 0.78rem;
   letter-spacing: 0.18em;
